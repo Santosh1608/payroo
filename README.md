@@ -4,14 +4,18 @@
 
 ### [Click Here](https://miro.com/app/board/uXjVO3392R8=/?share_link_id=775498590617) to view the Architecture Diagrams
 
-### [Click Here](https://www.getpostman.com/collections/98bb603126889a774c43) to view the Postman collection for hotel booking app
+### [Click Here](https://www.getpostman.com/collections/98bb603126889a774c43) to view the Postman collection as JSON file
+
+### Postman collection
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/14039115-eac187ed-8cc1-42b4-be56-c9686f847075?action=collection%2Ffork&collection-url=entityId%3D14039115-eac187ed-8cc1-42b4-be56-c9686f847075%26entityType%3Dcollection%26workspaceId%3D2728564a-1f94-4887-a838-082acda9f6b0)
 
 ### Tech Used
 
 - Docker 🐳 (Containerization)
 - Node, Express JS, RESTapi (Backend)
 - React 18, Redux ⚛ (Frontend)
-- MongoDB 🐘 (Database)
+- MongoDB (Database)
 
 ---
 
