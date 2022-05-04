@@ -4,6 +4,8 @@
 
 ### [Click Here](https://miro.com/app/board/uXjVO3392R8=/?share_link_id=775498590617) to view the Architecture Diagrams
 
+### [Click Here](https://www.getpostman.com/collections/98bb603126889a774c43) to view the Postman collection for hotel booking app
+
 ### Tech Used
 
 - Docker 🐳 (Containerization)
