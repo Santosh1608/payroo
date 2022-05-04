@@ -14,6 +14,7 @@
 - Node, Express JS, RESTapi (Backend)
 - React 18, Redux ⚛ (Frontend)
 - MongoDB (Database)
+- Jest (Testing)
 
 ---
 
@@ -46,7 +47,7 @@
       </td>
     </tr>
     <tr>
-      <td>Api</td>
+      <td>Server</td>
       <td>
         <ul>
           <li>Node JS</li>
@@ -73,9 +74,9 @@
       </td>
       <td>
         <ul>
-          <li>Hotel data is pre filled already in mongo cloud</li>
+          <li>Hotel data is pre filled already in mongo atlas</li>
           <li>Hotel Schema contains hotel name, price, image, location</li>
-          <li>Used mongoose ODM to connect mongodb database on cloud</li>
+          <li>Used mongoose ODM to connect to mongodb database on cloud</li>
         </ul>
       </td>
     </tr>
@@ -91,9 +92,9 @@
 
 ---
 
-### Install and run and test locally
+### Install, run and test with just one command
 
-Setup to run the application in your local machine
+Setup to run the application
 
 ```
 docker-compose up
