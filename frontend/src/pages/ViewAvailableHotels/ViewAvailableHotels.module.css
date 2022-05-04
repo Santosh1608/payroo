@@ -1,0 +1,16 @@
+.CardWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-gap: 16px;
+  align-items: stretch;
+}
+@media screen and (max-width: 891px) {
+  .CardWrapper {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  }
+}
+@media screen and (max-width: 550px) {
+  .CardWrapper {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}

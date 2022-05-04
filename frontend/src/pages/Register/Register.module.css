@@ -1,0 +1,32 @@
+.RegisterButton {
+  min-width: 85%;
+}
+
+.notePassword {
+  max-width: unset;
+  text-align: center;
+  color: #2196f3;
+  background: #f7fbfd;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.RegisterActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.Back {
+  font-size: 20px;
+  color: #2196f3;
+}
+
+.loginLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,95 @@
+.Header {
+  background: rgba(1, 182, 245, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  border-radius: 0;
+  background: #01b6f5;
+}
+
+.Logo {
+  color: white;
+  background: #e7f5e9;
+  font-size: 35px;
+  margin: 10px;
+}
+.activeLogo {
+  color: rgb(34, 35, 34);
+}
+.NavigationWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: stretch;
+  flex: 1;
+}
+
+.NavigationWrapper a {
+  padding: 12px 15px;
+  height: 100%;
+  max-height: initial;
+}
+.NavigationWrapper a:last-child svg {
+  margin-right: 3px;
+}
+.NavigationWrapper button {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DatePicker {
+  text-align: center;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  color: #e7f5e9;
+  outline: none;
+  cursor: pointer;
+  background: #01b6f5 !important;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-family: Inter, serif !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+.DatePicker:focus {
+  border: 2px solid rgba(1, 182, 245, 1);
+  box-shadow: 0 0 2px #01b6f5;
+}
+
+.DatePicker:hover {
+  background: #e7f5e9;
+}
+
+.DatePicker:hover::placeholder {
+  color: #2196f3;
+}
+
+.DatePicker::placeholder {
+  color: #e7f5e9;
+  font-family: Inter, serif !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 680px) {
+  .NavigationWrapper a {
+    flex: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .NavigationWrapper a {
+    padding: 8px;
+  }
+  .DatePicker {
+    padding: 5px;
+  }
+}

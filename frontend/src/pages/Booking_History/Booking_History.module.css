@@ -1,0 +1,31 @@
+.BookingButtonsWrapper button.active {
+  color: #fff;
+  background: #2196f3;
+}
+
+.BookingButtonsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.BookingButtonsWrapper button {
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(101, 101, 101);
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: none;
+  background: rgb(232, 244, 248);
+  flex: 1;
+}
+
+.BookingButtonsWrapper button {
+  transition: all 2s;
+}
+
+.BookingButtonsWrapper button:hover {
+  background: #2196f3;
+  color: white;
+}

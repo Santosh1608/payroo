@@ -1,0 +1,80 @@
+.Card {
+  background-color: #f1f1f1;
+  padding: 1em 0;
+  box-shadow: 0 1px 30px rgba(207, 206, 206, 0.12),
+    0 3px 5px rgba(81, 80, 80, 0.24);
+  text-align: center;
+}
+
+.Card > h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.Card .Details {
+  width: 85%;
+  margin: 0 auto 1em;
+  padding-top: 10.5em;
+  padding-bottom: 1em;
+  background-color: #ffebc8;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.24);
+  transition: all ease-in 0.15s;
+}
+
+.Card:hover .Details {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 5px rgba(0, 0, 0, 0.22);
+  transform: translate(0px, -2px) scale(1.01);
+}
+
+.Card .Details > h1 {
+  font-family: "Playfair Display";
+  font-size: 1em;
+}
+
+.Card .Details > h2 {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+.Card .Details .Price {
+  margin-top: 0.5em;
+}
+.Card .Details > p {
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.Image {
+  position: relative;
+  z-index: 2;
+  width: 75%;
+  height: 250px;
+  margin: 0 auto -10em;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+  transition: all ease-in 0.15s;
+}
+.Card:hover .Image {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translate(0px, -3px) scale(1.02);
+}
+
+@media screen and(max-width:891px) {
+  .Card {
+    width: 80%;
+  }
+}
+@media screen and(max-width:700px) {
+  .Card {
+    width: 100%;
+  }
+}

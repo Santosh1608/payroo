@@ -1,0 +1,112 @@
+.BookingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Booking {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  width: 70%;
+  margin: 15px;
+  filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.15));
+}
+.Booking__details {
+  flex: 3;
+  background-color: #fff;
+  min-height: 150px;
+  padding: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+.Booking__details .Booking__title {
+  margin-top: 0;
+}
+.Booking__details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.Booking__details ul li {
+  margin: 0.7rem 0;
+}
+.Booking__rip {
+  position: relative;
+  background-color: #fff;
+  background-image: linear-gradient(90deg, #fff 49%, #2196f3 50%);
+  margin: 10px 0;
+  width: 20px;
+}
+.Booking__rip::before,
+.Booking__rip::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+  left: 50%;
+  transform: translateX(-50%) rotate(135deg);
+  border-radius: 50%;
+}
+.Booking__rip::before {
+  top: -25px;
+  border-top-color: #2196f3;
+  border-right-color: #fff;
+}
+.Booking__rip::after {
+  border-right-color: #2196f3;
+  border-top-color: #fff;
+  bottom: -25px;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.Booking__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #2196f3;
+  min-height: 150px;
+  padding: 1rem;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+}
+.Booking__price .heading {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #ffcdde;
+  margin-left: -5px;
+}
+.Booking__price .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+.CancelBooking {
+  background: tomato;
+  padding: 12px 15px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.CancelBooking:hover {
+  background: rgb(255, 81, 50);
+}
+
+@media screen and (max-width: 550px) {
+  .Booking__rip {
+    display: none;
+  }
+  .Booking__price {
+    display: none;
+  }
+  .Booking {
+    width: 100%;
+  }
+}

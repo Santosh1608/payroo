@@ -1,0 +1,15 @@
+version: "3"
+services:
+  api:
+    image: "santhosh1608/hotel_booking_backend"
+    ports:
+      - "8000:8000"
+
+  client:
+    environment:
+      - WDS_SOCKET_PORT=0
+    image: "santhosh1608/hotel_booking_frontend"
+    ports:
+      - "3000:3000"
+  test:
+    image: "santhosh1608/hotel_booking_test"
