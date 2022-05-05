@@ -31,7 +31,7 @@ export const ConfirmationCard = ({
                 <span className="Date">
                   {isBookable ? "Booking Date" : "Booked Date"}
                 </span>
-                <span>{moment(date).format("YYYY-MM-DD")}</span>
+                <span>{moment(new Date(date)).format("MMMM Do, YYYY")}</span>
               </div>
 
               <div>

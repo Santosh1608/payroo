@@ -84,7 +84,7 @@ function ShowHotels() {
       ) : (
         <div style={{ textAlign: "center" }}>
           No Available Hotels Found on{" "}
-          {moment(searchDate).format("MMMM Do, YYYY")}
+          {moment(new Date(searchDate)).format("MMMM Do, YYYY")}
         </div>
       )}
     </div>

@@ -25,7 +25,7 @@ function UpComing_Bookings({ setShow }) {
   useLayoutEffect(() => {
     const upcomingBookings = booking_history.filter((booking) => {
       return (
-        moment(booking.bookingDate).isSameOrAfter(
+        moment(new Date(booking.bookingDate)).isSameOrAfter(
           moment(new Date()).format("YYYY-MM-DD")
         ) && booking.bookingStatus === BookingStatus.BOOKED
       );
