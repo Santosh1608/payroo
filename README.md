@@ -59,7 +59,7 @@
           <li>Handles request to <code>/api/auth</code> for Registration and Login of Users</li>
           <li>Handles request to <code>/api/hotel/book_hotel</code> for booking the hotel for a particular date</li>
           <li>Handles request to <code>/api/hotel/view_all_hotels</code> for getting all hotels from db</li>
-         <li>Handles request to <code>/api/hotel/view_all_available_hotels</code> for getting all available hotels for given particular date</li>
+         <li>Handles request to <code>/api/hotel/view_available_hotels_on_particular_date</code> for getting available hotels on particular date</li>
           <li>Handles request to <code>/api/hotel/booking_history</code> for showing users booking history</li>
         </ul>
       </td>
