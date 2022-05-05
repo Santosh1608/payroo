@@ -3,10 +3,11 @@ const Hotel = require("../../models/Hotel");
 const Bookings = require("../../models/Bookings");
 const moment = require("moment");
 const { isPastDate } = require("../../services/isPastDate");
+const { dateFormat } = require("../../constants/date-field");
 
 module.exports = async (req, res) => {
   try {
-    const bookingDate = moment(req.body.bookingDate).format("YYYY-MM-DD");
+    const bookingDate = moment(req.body.bookingDate).format(dateFormat);
 
     const { hotelId } = req.params;
 

@@ -3,8 +3,9 @@ const Bookings = require("../../models/Bookings");
 const Hotel = require("../../models/Hotel");
 const { isPastDate } = require("../../services/isPastDate");
 const moment = require("moment");
+const { dateFormat } = require("../../constants/date-field");
 module.exports = async (req, res) => {
-  let searchDate = moment(req.body.searchDate).format("YYYY-MM-DD");
+  let searchDate = moment(req.body.searchDate).format(dateFormat);
 
   try {
     // Should not get hotels for past dates

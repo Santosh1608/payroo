@@ -2,6 +2,7 @@ const request = require("supertest");
 const app = require("../../../app");
 const moment = require("moment");
 const { createHotel, createBooking } = require("./helpers");
+const { dateFormat } = require("../../../constants/date-field");
 it("Returns 401 if user try to view available hotels on particular date without signin", async () => {
   await request(app)
     .post("/api/hotel/view_available_hotels_on_particular_date")
@@ -17,7 +18,7 @@ it("Returns 400 if Date is not provided", async () => {
 });
 
 it("Should send all available hotels on particular date", async () => {
-  const currentDate = moment().format("YYYY-MM-DD");
+  const currentDate = moment().format(dateFormat);
   const { cookie } = await global.register();
   const hotel1 = await createHotel({ name: "Playfair", price: 1000 });
   const hotel2 = await createHotel({ name: "High Star", price: 2000 });

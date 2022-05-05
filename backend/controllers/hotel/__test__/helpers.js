@@ -3,10 +3,11 @@ const Bookings = require("../../../models/Bookings");
 const mongoose = require("mongoose");
 const { bookingStatus } = require("../../../constants/booking");
 const moment = require("moment");
+const { dateFormat } = require("../../../constants/date-field");
 
 const getFutureDate = () => {
   const numberofDaysToAdd = 2;
-  return moment().add(numberofDaysToAdd, "day").format("YYYY-MM-DD");
+  return moment().add(numberofDaysToAdd, "day").format(dateFormat);
 };
 
 const createHotel = async ({
