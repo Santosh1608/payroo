@@ -18,7 +18,7 @@ function Cancelled_Bookings() {
   }, []);
 
   const showCancelledBookings = cancelledBookings.map((booking) => {
-    return <BookingWrapper booking={booking} />;
+    return <BookingWrapper key={booking.id} booking={booking} />;
   });
 
   return (

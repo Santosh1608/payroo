@@ -22,7 +22,7 @@ function Past_Bookings() {
   }, []);
 
   const showPastBookings = pastBookings.map((booking) => {
-    return <BookingWrapper booking={booking} />;
+    return <BookingWrapper key={booking.id} booking={booking} />;
   });
 
   return (

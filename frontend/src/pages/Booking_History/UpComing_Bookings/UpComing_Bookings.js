@@ -58,6 +58,7 @@ function UpComing_Bookings({ setShow }) {
   const showUpComingBookings = upcomingBookings.map((booking) => {
     return (
       <BookingWrapper
+        key={booking.id}
         booking={booking}
         onCancelBookingHandler={onCancelBookingHandler}
       />
