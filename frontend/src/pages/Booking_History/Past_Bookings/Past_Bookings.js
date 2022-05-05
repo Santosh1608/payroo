@@ -13,7 +13,7 @@ function Past_Bookings() {
   useLayoutEffect(() => {
     const pastBookings = booking_history.filter((booking) => {
       return (
-        moment(booking.bookingDate).isBefore(
+        moment(new Date(booking.bookingDate)).isBefore(
           moment(new Date()).format("YYYY-MM-DD")
         ) && booking.bookingStatus === BookingStatus.BOOKED
       );

@@ -1,5 +1,6 @@
 import React from "react";
 import styleClasses from "./BookingWrapper.module.css";
+import moment from "moment";
 export const BookingWrapper = ({ booking, onCancelBookingHandler }) => {
   return (
     <div className={styleClasses.BookingWrapper}>
@@ -9,7 +10,10 @@ export const BookingWrapper = ({ booking, onCancelBookingHandler }) => {
           <ul>
             <li>Location: {booking.hotelId.location}</li>
             <li>Booking Id: {booking.id}</li>
-            <li>Booking Date: {booking.bookingDate}</li>
+            <li>
+              Booking Date:{" "}
+              {moment(new Date(booking.bookingDate)).format("MMMM Do, YYYY")}
+            </li>
             <li>Booking Status: {booking.bookingStatus}</li>
             <li>Hotel: {booking.hotelId.name}</li>
             <li>Price: {booking.hotelId.price}</li>
