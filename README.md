@@ -20,7 +20,7 @@
 
 ### Architecture Design
 
-<img src="screenshots/hotel_booking.jpg" />
+<img src="screenshots/hotel_booking_architecture.png" />
 
 ### Explanation
 
