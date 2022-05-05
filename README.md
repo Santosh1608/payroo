@@ -14,7 +14,7 @@
 - Node, Express JS, RESTapi (Backend)
 - React 18, Redux ⚛ (Frontend)
 - MongoDB (Database)
-- Jest (Testing)
+- Jest, MongoDB memory server (Testing)
 
 ---
 
